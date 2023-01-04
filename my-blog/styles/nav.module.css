@@ -2,8 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    width: 80%;
-    background-color: aqua;
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(232, 232, 232);
     margin: 0 auto;
+}
+
+.nav_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      gap: 20px;
+      text-decoration: none;
+}
+.nav_container li{
+      list-style: none;
+}
+.nav_container li a{
+      text-decoration: none;
 }

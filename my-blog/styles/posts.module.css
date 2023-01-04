@@ -1,0 +1,17 @@
+.container{
+    margin: 0 auto;
+    width: 90%;
+    height: 88vh;
+}
+
+.author{
+    color: rgb(154, 154, 154);
+}
+
+.data{
+    display: flex;
+    flex-direction: column;  
+}
+.data p{
+    margin: 0; 
+}

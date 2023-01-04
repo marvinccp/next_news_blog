@@ -1,5 +1,4 @@
-import Layout from "./blog/layout";
-
+import '../styles/globalstyles.css'
 export default function App({ Component, pageProps }) {
   return (
 

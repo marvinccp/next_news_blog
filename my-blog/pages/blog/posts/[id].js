@@ -1,24 +1,32 @@
 import React from "react";
 import Layout from "../layout";
 import Image from 'next/image'
-
+import styles from '../../../styles/posts.module.css'
 const Post = ({ dataPost}) => {
   return (
     <Layout title={dataPost.title}>
-      <h2>{dataPost.title}</h2>
-      <p>Author: {dataPost.author}</p>
-      <h4>{dataPost.content}</h4>
-      <Image
-        src={dataPost.urlToImage}
-        alt={`notice image ${dataPost.title}`}
-        width={1200}
-        height={1200}
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-        }}
-        priority={true}
-      />
+      <section className={styles.container}>
+        <h4>{dataPost.title}</h4>
+        <div className={styles.data}>
+          <p className={styles.author}>Author: {dataPost.author}</p>
+          <p className={styles.author}>Source: {dataPost.source.name}</p>
+        </div>
+
+        <p>{dataPost.content}</p>
+        <div>
+          <Image
+            src={dataPost.urlToImage}
+            alt={`notice image ${dataPost.title}`}
+            width={1200}
+            height={1200}
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
+            priority={true}
+          />
+        </div>
+      </section>
     </Layout>
   );
 };
