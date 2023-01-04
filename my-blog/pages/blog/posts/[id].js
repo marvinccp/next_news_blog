@@ -25,7 +25,6 @@ const Post = ({ dataPost}) => {
 
 export default Post;
 
-//obtener ids
 
 const getAllPostids = async () => {
   const data = await (

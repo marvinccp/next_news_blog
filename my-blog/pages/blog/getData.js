@@ -18,4 +18,3 @@ export const getData = async () =>{
     return data.articles;
 }
 
-getData()

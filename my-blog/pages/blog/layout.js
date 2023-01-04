@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 import Head from "next/head";
-
+import styles from '../../styles/nav.module.css'
 
 const Layout = ({ children, title = 'Next Blog' }) => {
   return (
@@ -9,7 +9,7 @@ const Layout = ({ children, title = 'Next Blog' }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <nav>
+      <nav className={styles.container}>
         <ul>
           <li>
             <Link href="/">Home</Link>
