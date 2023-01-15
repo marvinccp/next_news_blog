@@ -4,6 +4,7 @@ import { getData } from "./getData";
 import Layout from "./layout";
 import styles from '../../styles/blog.module.css'
 import Image from "next/image";
+
 export const getStaticProps = async () => {
   const posts = await getData();
   return {
