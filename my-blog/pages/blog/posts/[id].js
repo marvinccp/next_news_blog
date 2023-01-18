@@ -2,6 +2,9 @@ import React from "react";
 import Layout from "../layout";
 import Image from 'next/image'
 import styles from '../../../styles/posts.module.css'
+
+
+
 const Post = ({ dataPost}) => {
   return (
     <Layout title={dataPost.title}>

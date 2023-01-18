@@ -1,10 +1,19 @@
 import React from "react";
 import Link from "next/link";
-import { getData } from "./getData";
 import Layout from "./layout";
 import styles from '../../styles/blog.module.css'
 import Image from "next/image";
 
+
+const getData = async () => {
+  const data = await (
+    await fetch(
+      "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=4733b8f81b334ac0bdfb718def30fe5a"
+    )
+  ).json();
+  console.log(data.articles);
+  return data.articles;
+};
 export const getStaticProps = async () => {
   const posts = await getData();
   return {

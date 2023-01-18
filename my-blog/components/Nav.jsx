@@ -7,12 +7,14 @@ const Nav = () => {
   return (
     <nav className={styles.container}>
       <ul className={styles.nav_container}>
-        <Image
-          src={"/images/news.png"}
-          alt="news blog logo"
-          width={60}
-          height={60}
-        />
+        <Link href="/">
+          <Image
+            src={"/images/news.png"}
+            alt="news blog logo"
+            width={60}
+            height={60}
+          />
+        </Link>
         <li>
           <Link href="/">Home</Link>
         </li>
